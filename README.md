@@ -4,10 +4,10 @@
 This is a deep learning project involving the classifiction of dog pictures, that would be fed to a pretrained Convolutional Neural Network(CNN).The model would try to classify different dog images into 4 main categories correctly namely; Alsatian,Boerboel,Siberian Husky and Dalmatian. 
 ## Authors
 
-- [@damilare-akin](https://www.github.com/octokatherine)
-- [@ovated](Ehi)
-- [@kennyudekwu](Kenny)
-- [@amatad92](Amata)
+- [damilare-akin](http://github.com/damilare-akin)
+- [ovated](http://github.com/ovated)
+- [kennyudekwu](http://github.com/kennyudekwu)
+- [amatad92](http://github.com/amatad92)
   
 ## Badges
 
