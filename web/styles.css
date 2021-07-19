@@ -1,4 +1,10 @@
-body{
+@supports (-webkit-text-stroke: 1px black) {
+    div#main-text {
+      -webkit-text-stroke: 0.005rem black;
+    }
+  }
+
+body {
     background-image: url('https://kenkunchen.files.wordpress.com/2021/02/dogs-5941898_1280.jpg?w=840');
     min-height: 100vh;
     /* background-image: url('../images/dogo mid-res.jpg'); */
@@ -6,19 +12,87 @@ body{
     background-position-x: -2rem;
     background-position-y: -4rem;
     display: grid;
-    grid-template: repeat(10, 1fr) / repeat(6, 1fr);
+    grid-template: repeat(7, 1fr) 10% / repeat(6, 1fr);
     border: 1px solid red;
 }
 
-
-div#main-text{
+div#main-text {
     font-family: 'Nova Mono', monospace;
-    font-size: 2rem;
-    grid-area: 3 / 2 / 4 / 6;
+    font-size: 3rem;
+    grid-area: 2 / 2 / 3 / 6;
     text-align: center;
+    color: #ffffff;
+    font-weight: 800;
 }
     
-div#image-box{
+div.input-area {
+    background: #F9F9FB;
+    border: 1px dashed #D2D7E5;
+    border: 1px solid tomato;
+    box-sizing: border-box;
+    border-radius: 16px;
+    grid-area: 4/2/8/6;
+    margin: 1rem;
+    display: grid;
+    grid-template: 3fr 7fr / repeat(5, 1fr);
+}
+
+div#image-box {
     background-color: #fff;
-    grid-area: 5/2/9/6;
+    grid-area: 3/2/8/6;
+    box-shadow: 0px 13px 24px rgba(75, 88, 129, 0.2);
+    border-radius: 16px;
+}
+
+.image-box {
+    font-family: Inter;
+}
+
+div#drop-text {
+    position: relative;
+    top: 2.8rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    grid-area: 5/2/6/6;
+}
+
+div#max-text {
+    position: relative;
+    top: 4rem;
+    font-style: normal;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-align: center;
+    color: #7B89B2;
+    grid-area: 5/2/6/6;
+}
+
+div.line{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+    /* grid-area: ; */
+}
+
+div#import {
+    background: #DB710D;
+    border-radius: 26px;
+}
+
+div#get-breed {
+    background: #78DB57;
+    border-radius: 26px;
 }
