@@ -49,9 +49,7 @@ def result(request):
         inference = LEARN__INF.predict(img_path)[0]
         result = {'inference': inference}
         print(result)
-        # serializer = PredictionSerializer(data=result)
-        # if serializer.is_valid():
         return Response(result, status=status.HTTP_200_OK)
-    # return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
     except:
         return Response({'error': 'Something has gone wrong. Please check file type'}, status=status.HTTP_400_BAD_REQUEST)
