@@ -15,7 +15,7 @@ from fastai.vision.all import *
 import pathlib
 
 model_path = os.path.relpath(
-    'dog-breed-classification/models/dog_model.pkl', 'api/views.py')
+    'dog-breed-classifier/models/dog_model.pkl', 'api/views.py')
 
 """
 Avoiding "pathing issues" by creating the PosixPath property needed for processing of certain path format
@@ -35,7 +35,7 @@ else:
     raise Exception("Model path does not exist")
 
 
-@api_view(['GET'])
+@api_view(['POST'])
 @permission_classes((permissions.AllowAny,))
 def result(request):
     """
@@ -48,6 +48,7 @@ def result(request):
     try:
         inference = LEARN__INF.predict(img_path)[0]
         result = {'inference': inference}
+        default_storage.delete(img_path)
         print(result)
         return Response(result, status=status.HTTP_200_OK)
 
