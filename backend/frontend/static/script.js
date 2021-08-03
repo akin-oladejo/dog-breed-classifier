@@ -100,7 +100,7 @@ function uploadFile (name) {
     });
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST","http://localhost:8000/api/predict/");
+    xhr.open("POST","/api/predict/");
     xhr.responseType = 'json';
     //xhr.setRequestHeader('Content-type','multipart/form-data')
     xhr.upload.addEventListener("progress", ({loaded, total}) => {
