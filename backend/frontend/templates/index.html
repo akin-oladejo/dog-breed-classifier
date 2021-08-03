@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Breed Classification🐶</title>
-    <link href="{% static '/style.css' %}" rel='stylesheet'>
+    <link href="{% static '/frontend/css/style.css' %}" rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@400;800&family=Nova+Mono&display=swap');
@@ -26,7 +26,7 @@
         <button id="breed">Get breed</button>
       </div>
       <div class='input-area' id="input-area">
-        <div class='folder'><img class="click-folder" src="{% static '/images/folderemoji.png' %}" id='folder'/></div>
+        <div class='folder'><img class="click-folder" src="{% static '/frontend/images/folderemoji.png' %}" id='folder'/></div>
         <p id='instruction'>Place image file here</p>
         <section class="progress-area"></section>
       </div>
@@ -38,7 +38,7 @@
     <div class="wrapper">
       <div class="content">
         <div class="warn-icon">
-          <span class="icon"><img src="{% static '/images/dogemoji.png' %}"></span>
+          <span class="icon"><img src="{% static '/frontend/images/dogemoji.png' %}"></span>
         </div>
         <h2 class="breed-name">Breed name</h2>
         <p class='desc'>Description.</p>
@@ -52,6 +52,6 @@
 
     </script>
 
-    <script src="{% static '/script.js' %}" async></script>
+    <script src="{% static '/frontend/js/script.js' %}" async></script>
   </body>
 </html>

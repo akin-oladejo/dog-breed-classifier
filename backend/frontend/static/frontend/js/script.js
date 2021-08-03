@@ -45,7 +45,6 @@ button.addEventListener("click", ()=>{
 //   <p id='instruction'>Place image file here</p>
 //   <section class="progress-area"></section>
 //                         `;
-  console.log('Try another activated');
   window.location.reload(); // reload page to try another image file
 });
 
@@ -65,12 +64,10 @@ function hidePopup(){
 
 
 addFile.addEventListener("click", () =>{
-    console.log('File input handler activated...')
     fileInput.click();
   });
 
 browseFile.addEventListener("click", () =>{
-    console.log('File input handler activated again...')
     fileInput.click();
   });
 
@@ -111,7 +108,7 @@ function uploadFile (name) {
         let fileSize;
         (fileTotal < 1024) ? fileSize = fileTotal + "KB" : fileSize = (loaded / (1024*1024)).toFixed(2) + "MB";
         let progressHTML = `
-        <div class='folder'><img src="{% static '/images/fileemoji.png' %}"/></div>
+        <div class='folder'><img src="../../static/frontend/images/fileemoji.png"/></div>
         <span class="name">${name} • Uploading</span>
         <span class="percent">${fileLoaded}%</span>
         <div class="progress-bar">
@@ -124,7 +121,7 @@ function uploadFile (name) {
             browseFile.disabled = false;
             activate_btn.disabled = false;
             inputArea.innerHTML = `
-            <div class='folder' id="checked"><img src="{% static '/images/checkedemoji.png' %}"/></div>
+            <div class='folder' id="checked"><img src="../../static/frontend/images/checkedemoji.png"/></div>
             <span class="name">${name} • Uploaded</span>
             <span class="size">${fileSize}</span>
                                   `;

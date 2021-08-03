@@ -128,8 +128,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'frontend/static')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, '/static/')
-]
+path = Path(STATIC_ROOT)
+print(path)
+print(path.exists())

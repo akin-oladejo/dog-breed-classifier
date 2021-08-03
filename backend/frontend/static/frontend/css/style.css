@@ -25,7 +25,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: rgba(252, 194, 0, 0.59);
-    background-image: url("./images/dogbg.jpg");
+    background-image: url("../images/dogbg.jpg");
     background-size: contain;
 }
 
