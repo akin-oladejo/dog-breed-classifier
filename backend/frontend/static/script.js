@@ -94,7 +94,7 @@ function uploadFile (name) {
 
     //alert the user if a file is being uploaded via drag and drop
     dropArea1.addEventListener("drop", (event) => {
-      console.log("Alert me now!");
+      // console.log("Alert me now!");
       event.preventDefault(); //preventing from default behaviour
       alert("Sorry! Action not allowed at this time");
     });
@@ -151,7 +151,6 @@ function uploadFile (name) {
             break;
 
           case "Boerboel":
-            console.log("Running switch case...");
             description.innerHTML = "A large, mastiff-type dog from South Africa with a black mask and a short coat.";
             break;
 
