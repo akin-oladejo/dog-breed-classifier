@@ -10,7 +10,6 @@ import os
 # Importing dependencies of the ML Model
 
 from pathlib import Path
-import fastbook
 from fastai.vision.all import *
 import pathlib
 
@@ -23,8 +22,6 @@ passed in
 """
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
-
-fastbook.setup_book()
 
 path = Path(model_path)
 
