@@ -7,7 +7,7 @@ from api import views
 urlpatterns = [
     # path('predict', views.result, name="inferece"),
     path('admin/', admin.site.urls),
-    path('frontend/', include('frontend.urls')),
+    path('', include('frontend.urls')),
     path('api/', include('api.urls'))
 ]
 
