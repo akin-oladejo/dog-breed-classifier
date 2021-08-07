@@ -1,1 +1,1 @@
-web: gunicorn backend.backend.wsgi.py --log-file -
+web:  py backend.manage.py runserver 0.0.0.0:8000
